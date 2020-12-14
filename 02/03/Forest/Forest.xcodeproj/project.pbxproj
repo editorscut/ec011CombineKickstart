@@ -17,6 +17,7 @@
 		62A5E6942582689C00DCF42D /* FarFarAway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A5E68D2582689C00DCF42D /* FarFarAway.framework */; };
 		62A5E6952582689C00DCF42D /* FarFarAway.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62A5E68D2582689C00DCF42D /* FarFarAway.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62A5E6A1258270AC00DCF42D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A5E6A0258270AC00DCF42D /* Model.swift */; };
+		62A5E6A825850E6700DCF42D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A5E6A725850E6700DCF42D /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		62A5E68F2582689C00DCF42D /* FarFarAway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FarFarAway.h; sourceTree = "<group>"; };
 		62A5E6902582689C00DCF42D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62A5E6A0258270AC00DCF42D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		62A5E6A725850E6700DCF42D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				62A5E69B258268D600DCF42D /* Support */,
 				62A5E6A0258270AC00DCF42D /* Model.swift */,
+				62A5E6A725850E6700DCF42D /* State.swift */,
 			);
 			path = FarFarAway;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62A5E6A1258270AC00DCF42D /* Model.swift in Sources */,
+				62A5E6A825850E6700DCF42D /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
