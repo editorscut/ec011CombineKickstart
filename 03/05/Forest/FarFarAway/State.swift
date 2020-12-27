@@ -1,14 +1,21 @@
 import Combine
 
-public class State: ObservableObject {
-  @Published private var model = Model()
+public class State {
+  private var model = Model() {
+    didSet {
+      subject.send()
+    }
+  }
+  public let subject = PassthroughSubject<Void, Never>()
   
-  public var value: Int { model.value }
-  
-  public init() {}
+  public init(){}
 }
 
 extension State {
+  public var value: Int {
+    model.value
+  }
+  
   public func next() {
     model = model.next
   }

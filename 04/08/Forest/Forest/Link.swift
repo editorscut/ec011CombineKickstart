@@ -12,8 +12,7 @@ class Link: ObservableObject {
 extension Link {
   func contentsSubscription() {
     state.valuePublisher
-      .map(\.description)
-      .assign(to: &$contents)
+      .assignDescription(to: &$contents)
   }
 }
 

@@ -1,18 +1,16 @@
 import Combine
 
-public class State {
+public class State: ObservableObject {
   @Published private var model = Model()
   
-  lazy public private(set) var valuePublisher: AnyPublisher<Int, Never>
-    = $model
-    .dropFirst()
-    .map(\.value)
-    .eraseToAnyPublisher()
-  
-  public init() {}
+  public init(){}
 }
 
 extension State {
+  public var value: Int {
+    model.value
+  }
+  
   public func next() {
     model = model.next
   }

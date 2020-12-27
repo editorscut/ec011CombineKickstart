@@ -22,5 +22,3 @@ class ViewController: UIViewController {
     value = Int.random(in: 1...100)
   }
 }
-
-w

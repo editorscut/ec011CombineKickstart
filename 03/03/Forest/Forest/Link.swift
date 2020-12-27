@@ -9,10 +9,17 @@ class Link {
   }
 }
 
+
 extension Link {
   func contentsSubscription() {
-    state.subject
-      .uiDisplay(using: &$contents)
+    NotificationCenter.default
+      .publisher(for: valueUpdate,
+                 object: state)
+      .compactMap {notification in
+        notification.object as? State
+      }
+      .map(\.value)
+      .assignDescription(asOptionalTo: &$contents)
   }
 }
 

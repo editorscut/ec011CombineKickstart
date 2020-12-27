@@ -14,7 +14,7 @@ extension Link {
     state.$model
       .dropFirst()
       .map(\.value)
-      .uiDisplay(using: &$contents)
+      .assignDescription(asOptionalTo: &$contents)
   }
 }
 

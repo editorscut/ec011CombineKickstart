@@ -11,10 +11,9 @@ class Link {
 
 extension Link {
   func contentsSubscription() {
-    state
-      .publisher(for: \.value)
+    state.$value
       .dropFirst()
-      .uiDisplay(using: &$contents)
+      .assignDescription(asOptionalTo: &$contents)
   }
 }
 

@@ -1,21 +1,10 @@
 import Foundation
 
-public let valueUpdate = Notification.Name("valueUpdate")
-
-public class State {
+public class State: NSObject {
   private var model = Model() {
-    didSet {
-      NotificationCenter.default
-        .post(name: valueUpdate,
-              object: self)
-    }
+    didSet {value = model.value}
   }
-  
-  public init() {}
-  
-  public var value: Int {
-    model.value
-  }
+  @objc dynamic public private(set) var value = 0
 }
 
 extension State {

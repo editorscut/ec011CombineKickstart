@@ -1,17 +1,24 @@
-import Combine
+import Foundation
+
+public let valueUpdate = Notification.Name("valueUpdate")
 
 public class State {
   private var model = Model() {
     didSet {
-      subject.send(model.value)
+      NotificationCenter.default
+        .post(name: valueUpdate,
+              object: self)
     }
   }
-  public let subject = PassthroughSubject<Int, Never>()
   
-  public init() {}
+  public init(){}
 }
 
 extension State {
+  public var value: Int {
+    model.value
+  }
+  
   public func next() {
     model = model.next
   }

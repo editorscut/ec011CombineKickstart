@@ -9,12 +9,15 @@ class Link {
   }
 }
 
+
 extension Link {
   func contentsSubscription() {
-    state.objectWillChange
-      .receive(on: RunLoop.main)
-      .map{[state] _ in state.value}
-      .uiDisplay(using: &$contents)
+    state
+      .subject
+      .map {[state] _ in
+        state.value
+      }
+      .assignDescription(asOptionalTo: &$contents)
   }
 }
 

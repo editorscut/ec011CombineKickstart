@@ -1,8 +1,8 @@
 import FarFarAway
 
-class Link: ObservableObject {
+class Link {
   private let state = State()
-  @Published private(set) var contents: String = "..."
+  @Published private(set) var contents: String? = "..."
   
   init() {
     contentsSubscription()
@@ -11,8 +11,10 @@ class Link: ObservableObject {
 
 extension Link {
   func contentsSubscription() {
-    state.valuePublisher
-      .display(using: &$contents)
+    state.$model
+      .dropFirst()
+      .map(\.value)
+      .assignDescription(asOptionalTo: &$contents)
   }
 }
 

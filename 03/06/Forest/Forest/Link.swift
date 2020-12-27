@@ -9,10 +9,15 @@ class Link {
   }
 }
 
+
 extension Link {
   func contentsSubscription() {
-    state.valuePublisher
-      .uiDisplay(using: &$contents)
+    state
+      .objectWillChange
+      .map {[state] _ in
+        state.value
+      }
+      .assignDescription(asOptionalTo: &$contents)
   }
 }
 

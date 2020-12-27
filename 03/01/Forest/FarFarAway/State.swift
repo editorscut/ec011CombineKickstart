@@ -1,13 +1,11 @@
-import Foundation
-
-public class State: NSObject {
-  private var model = Model() {
-    willSet { willChangeValue(for: \.value) }
-    didSet  { didChangeValue(for: \.value)  }
-  }
+public class State {
+  @Published private var model = Model()
+  @Published public private(set) var value = 0
   
-  @objc dynamic public var value: Int {
-    model.value
+  public init(){
+    $model
+      .map(\.value)
+      .assign(to: &$value)
   }
 }
 
