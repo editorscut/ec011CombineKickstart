@@ -1,5 +1,3 @@
-import Foundation
-
 public class State: NSObject {
   private var model = Model() {
     didSet {value = model.value}

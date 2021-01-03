@@ -1,5 +1,3 @@
-import Foundation
-
 public let valueUpdate = Notification.Name("valueUpdate")
 
 public class State {

@@ -17,14 +17,11 @@ extension Link {
     state.valuePublisher
       .map(\.description)
       .sink{[weak self] completion in
-        switch completion {
-        case .finished:
-          self?.buttonIsNotEnabled = true
-        case .failure(let error):
+        self?.buttonIsNotEnabled = true
+        if case let .failure(error) = completion {
           self?.contents = "Error: \(error)"
         }
-      }
-      receiveValue: {[weak self] string in
+      } receiveValue: {[weak self] string in
         self?.contents = string
       }
   }
