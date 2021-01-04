@@ -1,5 +1,5 @@
-public struct Model {
-  public let value: Int
+struct Model {
+  let value: Int
   
   init() { value = 0 }
 }

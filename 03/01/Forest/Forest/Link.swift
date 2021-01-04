@@ -11,7 +11,8 @@ class Link {
 
 extension Link {
   func contentsSubscription() {
-    state.$value
+    state
+      .$value
       .dropFirst()
       .assignDescription(asOptionalTo: &$contents)
   }

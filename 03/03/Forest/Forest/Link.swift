@@ -9,12 +9,10 @@ class Link {
   }
 }
 
-
 extension Link {
   func contentsSubscription() {
     NotificationCenter.default
-      .publisher(for: valueUpdate,
-                 object: state)
+      .publisher(for: valueUpdate)
       .compactMap {notification in
         notification.object as? State
       }

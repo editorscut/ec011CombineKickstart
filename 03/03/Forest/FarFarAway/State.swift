@@ -3,17 +3,18 @@ public let valueUpdate = Notification.Name("valueUpdate")
 public class State {
   private var model = Model() {
     didSet {
-      NotificationCenter.default
+      NotificationCenter
+        .default
         .post(name: valueUpdate,
               object: self)
     }
   }
   
-  public init(){}
+  public init() {}
 }
 
 extension State {
-  public var value: Int {
+  @objc dynamic public var value: Int {
     model.value
   }
   

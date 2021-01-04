@@ -9,10 +9,10 @@ class Link {
   }
 }
 
-
 extension Link {
   func contentsSubscription() {
-    state.publisher(for: \.value)
+    state
+      .publisher(for: \.value)
       .dropFirst()
       .assignDescription(asOptionalTo: &$contents)
   }
