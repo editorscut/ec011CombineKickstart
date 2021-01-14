@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6202A72C25AA3EC000D05E32 /* Pair_a_DiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6202A72B25AA3EC000D05E32 /* Pair_a_DiceApp.swift */; };
+		6202A72E25AA3EC000D05E32 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6202A72D25AA3EC000D05E32 /* MainView.swift */; };
+		6202A73025AA3EC100D05E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6202A72F25AA3EC100D05E32 /* Assets.xcassets */; };
+		6202A73325AA3EC100D05E32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6202A73225AA3EC100D05E32 /* Preview Assets.xcassets */; };
+		6202A74025AA425600D05E32 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6202A73F25AA425600D05E32 /* Die.swift */; };
+		6202A74425AA429000D05E32 /* DieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6202A74325AA429000D05E32 /* DieView.swift */; };
+		6202A74725AA435000D05E32 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6202A74625AA435000D05E32 /* Board.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6202A72825AA3EC000D05E32 /* Pair-a-Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pair-a-Dice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6202A72B25AA3EC000D05E32 /* Pair_a_DiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair_a_DiceApp.swift; sourceTree = "<group>"; };
+		6202A72D25AA3EC000D05E32 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6202A72F25AA3EC100D05E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6202A73225AA3EC100D05E32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6202A73425AA3EC100D05E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6202A73F25AA425600D05E32 /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
+		6202A74325AA429000D05E32 /* DieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieView.swift; sourceTree = "<group>"; };
+		6202A74625AA435000D05E32 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6202A72525AA3EC000D05E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6202A71F25AA3EC000D05E32 = {
+			isa = PBXGroup;
+			children = (
+				6202A72A25AA3EC000D05E32 /* Pair-a-Dice */,
+				6202A72925AA3EC000D05E32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6202A72925AA3EC000D05E32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6202A72825AA3EC000D05E32 /* Pair-a-Dice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6202A72A25AA3EC000D05E32 /* Pair-a-Dice */ = {
+			isa = PBXGroup;
+			children = (
+				6202A73E25AA424500D05E32 /* Model */,
+				6202A73C25AA420400D05E32 /* View */,
+				6202A73D25AA422800D05E32 /* Control */,
+				6202A73B25AA3ECC00D05E32 /* Support */,
+			);
+			path = "Pair-a-Dice";
+			sourceTree = "<group>";
+		};
+		6202A73125AA3EC100D05E32 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6202A73225AA3EC100D05E32 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6202A73B25AA3ECC00D05E32 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6202A72B25AA3EC000D05E32 /* Pair_a_DiceApp.swift */,
+				6202A72F25AA3EC100D05E32 /* Assets.xcassets */,
+				6202A73425AA3EC100D05E32 /* Info.plist */,
+				6202A73125AA3EC100D05E32 /* Preview Content */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		6202A73C25AA420400D05E32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6202A72D25AA3EC000D05E32 /* MainView.swift */,
+				6202A74325AA429000D05E32 /* DieView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6202A73D25AA422800D05E32 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				6202A74625AA435000D05E32 /* Board.swift */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
+		6202A73E25AA424500D05E32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6202A73F25AA425600D05E32 /* Die.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6202A72725AA3EC000D05E32 /* Pair-a-Dice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6202A73725AA3EC100D05E32 /* Build configuration list for PBXNativeTarget "Pair-a-Dice" */;
+			buildPhases = (
+				6202A72425AA3EC000D05E32 /* Sources */,
+				6202A72525AA3EC000D05E32 /* Frameworks */,
+				6202A72625AA3EC000D05E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pair-a-Dice";
+			productName = "Pair-a-Dice";
+			productReference = 6202A72825AA3EC000D05E32 /* Pair-a-Dice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6202A72025AA3EC000D05E32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					6202A72725AA3EC000D05E32 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 6202A72325AA3EC000D05E32 /* Build configuration list for PBXProject "Pair-a-Dice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6202A71F25AA3EC000D05E32;
+			productRefGroup = 6202A72925AA3EC000D05E32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6202A72725AA3EC000D05E32 /* Pair-a-Dice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6202A72625AA3EC000D05E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6202A73325AA3EC100D05E32 /* Preview Assets.xcassets in Resources */,
+				6202A73025AA3EC100D05E32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6202A72425AA3EC000D05E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6202A72E25AA3EC000D05E32 /* MainView.swift in Sources */,
+				6202A74425AA429000D05E32 /* DieView.swift in Sources */,
+				6202A74725AA435000D05E32 /* Board.swift in Sources */,
+				6202A72C25AA3EC000D05E32 /* Pair_a_DiceApp.swift in Sources */,
+				6202A74025AA425600D05E32 /* Die.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6202A73525AA3EC100D05E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6202A73625AA3EC100D05E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6202A73825AA3EC100D05E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pair-a-Dice/Preview Content\"";
+				DEVELOPMENT_TEAM = MG5SW9CY8D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Pair-a-Dice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dimsumthinking.Pair-a-Dice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6202A73925AA3EC100D05E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pair-a-Dice/Preview Content\"";
+				DEVELOPMENT_TEAM = MG5SW9CY8D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Pair-a-Dice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dimsumthinking.Pair-a-Dice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6202A72325AA3EC000D05E32 /* Build configuration list for PBXProject "Pair-a-Dice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6202A73525AA3EC100D05E32 /* Debug */,
+				6202A73625AA3EC100D05E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6202A73725AA3EC100D05E32 /* Build configuration list for PBXNativeTarget "Pair-a-Dice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6202A73825AA3EC100D05E32 /* Debug */,
+				6202A73925AA3EC100D05E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6202A72025AA3EC000D05E32 /* Project object */;
+}
