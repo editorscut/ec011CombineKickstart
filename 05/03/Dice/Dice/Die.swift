@@ -22,4 +22,8 @@ extension Die {
         self?.next()
       }
   }
+  
+  func stop() {
+    roll.send(completion: .finished)
+  }
 }

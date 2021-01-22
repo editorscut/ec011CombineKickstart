@@ -1,6 +1,6 @@
 import Combine
 
-struct Die {
+class Die {
   let roll = PassthroughSubject<Int, Never>()
 }
 
