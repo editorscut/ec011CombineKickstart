@@ -24,6 +24,8 @@ extension ContentView: View {
       DieHistoryView(dieViews: board.greenDieViews)
       Text("Merged")
       DieHistoryView(dieViews: board.mergedDieViews)
+      Text("Combined")
+      CombinedHistoryView(combinedViews: board.combinedViews)
     }
   }
 }

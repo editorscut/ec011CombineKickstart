@@ -9,6 +9,7 @@ class Board: ObservableObject {
   @Published private(set) var dieViews = [DieView]()
   @Published private(set) var greenDieViews = [DieView]()
   @Published private(set) var mergedDieViews = [DieView]()
+  @Published private(set) var combinedViews = [(DieView, DieView)]()
   @Published private(set) var isRunning = false
   @Published private(set) var tallies = Array(repeating: 0,
                                               count: 6)
@@ -23,6 +24,7 @@ extension Board {
     greenDieViewPipeline()
     historyViewsPipelines()
     mergedViewsPipeline()
+    combinedViewsPipeline()
   }
   
   private func dieViewPipeline() {
@@ -64,6 +66,15 @@ extension Board {
         dieViewArray + [nextView]
       }
       .assign(to: &$mergedDieViews)
+  }
+  
+  private func combinedViewsPipeline() {
+    Publishers.CombineLatest($dieView.dropFirst(),
+                             $greenDieView.dropFirst())
+      .scan([(DieView, DieView)]()){(dieViewArray, nextView) in
+        dieViewArray + [nextView]
+      }
+      .assign(to: &$combinedViews)
   }
 }
 
