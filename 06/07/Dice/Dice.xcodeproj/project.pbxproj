@@ -16,10 +16,10 @@
 		62FD659C25AF58C80075750F /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FD659B25AF58C80075750F /* Board.swift */; };
 		C781312E25BF160E00FDD286 /* DieViewPreviousFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781312D25BF160E00FDD286 /* DieViewPreviousFive.swift */; };
 		C781314925BF680F00FDD286 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781314825BF680F00FDD286 /* Formatter.swift */; };
-		C794D4CC25C357C60097FDFF /* CombinedHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794D4C825C357C60097FDFF /* CombinedHistoryView.swift */; };
-		C794D4CD25C357C60097FDFF /* CompareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794D4C925C357C60097FDFF /* CompareView.swift */; };
-		C794D4CE25C357C60097FDFF /* DieHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794D4CA25C357C60097FDFF /* DieHistoryView.swift */; };
-		C794D4CF25C357C60097FDFF /* RollTallyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794D4CB25C357C60097FDFF /* RollTallyView.swift */; };
+		C781314D25BFBE4500FDD286 /* RollTallyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781314C25BFBE4500FDD286 /* RollTallyView.swift */; };
+		C781315425C0674900FDD286 /* DieHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781315325C0674900FDD286 /* DieHistoryView.swift */; };
+		C794D49E25C19DF80097FDFF /* CombinedHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794D49D25C19DF80097FDFF /* CombinedHistoryView.swift */; };
+		C794D4A425C315500097FDFF /* CompareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794D4A325C315500097FDFF /* CompareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		62FD659B25AF58C80075750F /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		C781312D25BF160E00FDD286 /* DieViewPreviousFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieViewPreviousFive.swift; sourceTree = "<group>"; };
 		C781314825BF680F00FDD286 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
-		C794D4C825C357C60097FDFF /* CombinedHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedHistoryView.swift; sourceTree = "<group>"; };
-		C794D4C925C357C60097FDFF /* CompareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompareView.swift; sourceTree = "<group>"; };
-		C794D4CA25C357C60097FDFF /* DieHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieHistoryView.swift; sourceTree = "<group>"; };
-		C794D4CB25C357C60097FDFF /* RollTallyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollTallyView.swift; sourceTree = "<group>"; };
+		C781314C25BFBE4500FDD286 /* RollTallyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollTallyView.swift; sourceTree = "<group>"; };
+		C781315325C0674900FDD286 /* DieHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieHistoryView.swift; sourceTree = "<group>"; };
+		C794D49D25C19DF80097FDFF /* CombinedHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedHistoryView.swift; sourceTree = "<group>"; };
+		C794D4A325C315500097FDFF /* CompareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				62FD658525AF3FCE0075750F /* ContentView.swift */,
-				C794D4C825C357C60097FDFF /* CombinedHistoryView.swift */,
-				C794D4C925C357C60097FDFF /* CompareView.swift */,
-				C794D4CA25C357C60097FDFF /* DieHistoryView.swift */,
-				C794D4CB25C357C60097FDFF /* RollTallyView.swift */,
 				62FD659525AF429D0075750F /* DieView.swift */,
 				C781312D25BF160E00FDD286 /* DieViewPreviousFive.swift */,
+				C781314C25BFBE4500FDD286 /* RollTallyView.swift */,
+				C781315325C0674900FDD286 /* DieHistoryView.swift */,
+				C794D49D25C19DF80097FDFF /* CombinedHistoryView.swift */,
+				C794D4A325C315500097FDFF /* CompareView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,15 +183,15 @@
 			files = (
 				62FD658625AF3FCE0075750F /* ContentView.swift in Sources */,
 				62FD658425AF3FCE0075750F /* DiceApp.swift in Sources */,
-				C794D4CC25C357C60097FDFF /* CombinedHistoryView.swift in Sources */,
 				62FD659C25AF58C80075750F /* Board.swift in Sources */,
-				C794D4CF25C357C60097FDFF /* RollTallyView.swift in Sources */,
-				C794D4CE25C357C60097FDFF /* DieHistoryView.swift in Sources */,
+				C781314D25BFBE4500FDD286 /* RollTallyView.swift in Sources */,
+				C794D4A425C315500097FDFF /* CompareView.swift in Sources */,
 				C781314925BF680F00FDD286 /* Formatter.swift in Sources */,
+				C794D49E25C19DF80097FDFF /* CombinedHistoryView.swift in Sources */,
+				C781315425C0674900FDD286 /* DieHistoryView.swift in Sources */,
 				C781312E25BF160E00FDD286 /* DieViewPreviousFive.swift in Sources */,
 				62FD659925AF55710075750F /* Die.swift in Sources */,
 				62FD659625AF429D0075750F /* DieView.swift in Sources */,
-				C794D4CD25C357C60097FDFF /* CompareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +321,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dice/Preview Content\"";
+				DEVELOPMENT_TEAM = MG5SW9CY8D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Dice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -342,6 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dice/Preview Content\"";
+				DEVELOPMENT_TEAM = MG5SW9CY8D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Dice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

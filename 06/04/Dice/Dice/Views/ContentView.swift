@@ -17,7 +17,7 @@ extension ContentView: View {
           .disabled(!board.isRunning)
       }
       Text("Tallies")
-      TallyView(tallies: board.tallies)
+      RollTallyView(tallies: board.tallies)
     }
   }
 }

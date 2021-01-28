@@ -6,9 +6,13 @@ struct ContentView {
 
 extension ContentView: View {
   var body: some View {
-    VStack (spacing: 40) {
-      board.dieView
-      HStack (spacing: 50) {
+    VStack (spacing: 20) {
+      HStack (spacing: 20) {
+        board.dieView
+        board.compareView
+        board.greenDieView
+      }
+      HStack (spacing: 60) {
         Button("Start",
                action: board.start)
           .disabled(board.isRunning)
@@ -16,8 +20,7 @@ extension ContentView: View {
                action: board.stop)
           .disabled(!board.isRunning)
       }
-      Text("Previous Five")
-      DieViewPreviousFive(dieViews: board.dieViews)
     }
   }
 }
+

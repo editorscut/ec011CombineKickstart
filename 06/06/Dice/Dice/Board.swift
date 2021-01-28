@@ -76,6 +76,7 @@ extension Board {
       }
       .assign(to: &$combinedViews)
   }
+
 }
 
 extension Board {

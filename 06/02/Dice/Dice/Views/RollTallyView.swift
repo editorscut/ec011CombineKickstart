@@ -1,10 +1,10 @@
 import SwiftUI
 
-struct TallyView {
+struct RollTallyView {
   let tallies: [Int]
 }
 
-extension TallyView: View {
+extension RollTallyView: View {
     var body: some View {
       List {
         ForEach(0..<6) {index in
