@@ -11,7 +11,7 @@ public class State {
     .map(\.value)
     .print("Mapped (in State)")
     .prefix(5)
-    .print("Prefixed (in State")
+    .print("Prefixed (in State)")
     .eraseToAnyPublisher()
   
   public init() {}

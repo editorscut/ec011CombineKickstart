@@ -17,7 +17,7 @@ extension Board {
                       self?.stop()})
       .assign(to: &$dieView)
   }
-  
+    
   func next() {
     die.next()
   }
