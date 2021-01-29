@@ -26,7 +26,7 @@ extension State {
 extension State {
   func normalizedValue(_ value: Int) throws -> Int {
     if value.isMultiple(of: 5) {
-      throw DivisibleByFive(value)
+      throw DivisibleByFive()
     } else {
       return value % 3
     }

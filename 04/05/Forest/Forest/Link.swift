@@ -15,7 +15,7 @@ class Link: ObservableObject {
 extension Link {
   func contentsSubscription() -> AnyCancellable {
     Fail(outputType: Int.self,
-         failure: DivisibleByFive(15))
+         failure: DivisibleByFive())
       .map(\.description)
       .print()
       .sink{[weak self] completion in
