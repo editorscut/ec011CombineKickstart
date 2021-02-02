@@ -26,9 +26,9 @@ extension Board {
   
   private func demoPipeline() -> AnyCancellable {
     die.sharedRoll
-      .count()
+      .allSatisfy {int in int.isMultiple(of: 2)}
       .print("Demo ==>")
-      .sink{int in print("\t Count:", int)}
+      .sink{bool in print("\t All Even:", bool)}
   }
 }
 
