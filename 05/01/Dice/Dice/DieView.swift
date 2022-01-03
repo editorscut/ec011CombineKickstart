@@ -12,7 +12,7 @@ extension DieView: View {
 
 extension DieView {
   private var dieFace: Image {
-    guard (1...60).contains(dots) else {
+    guard (1...6).contains(dots) else {
       return Image(systemName: "square")
     }
     return Image(systemName: "die.face.\(dots)")
